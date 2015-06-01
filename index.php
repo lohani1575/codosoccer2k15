@@ -10,47 +10,59 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-
   </head>
-  <body>
+
+
+  <body onload="ClearForm()">
        <div class="container">
-            <div class="row header clearfix">
-				<div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+       <div class="row header clearfix">
+			 <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
 					<img src="img/logo.png" class="img-responsive center-block"  alt="logo">
-				</div>
+		  	</div>
 				<div>
 					<h1 class="col-lg-4 col-sm-6 col-md-5 col-xs-12" style="font-size:30px;">Code-O-Soccer <small>2k15</small><br> <small>IIT KHARAGPUR</small></h1>
 				</div>
 			</div>
-       </div>
+      </div>
     <div class="jumbotron">
 	<div class="container main">
-	
-	<div role="tabpanel" class="tabs">
 
+
+
+
+	<div role="tabpanel" class="tabs">
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active" class="col-lg-2"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" >Home</a></li>
-    <li role="presentation"><a href="#dashboard" aria-controls="dashboard" role="tab" data-toggle="tab">Dashboard</a></li>
-	<li role="presentation"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab">Documentation</a></li>
-	<li role="presentation"><a href="#faq" aria-controls="faq" role="tab" data-toggle="tab">FAQs</a></li>
-    <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact Us</a></li>
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register-button">Register</button>
+      <li role="presentation" class="active" class="col-lg-2"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" >Home</a></li>
+      <li role="presentation"><a href="#dashboard" aria-controls="dashboard" role="tab" data-toggle="tab">Dashboard</a></li>
+	    <li role="presentation"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab">Documentation</a></li>
+	    <li role="presentation"><a href="#faq" aria-controls="faq" role="tab" data-toggle="tab">FAQs</a></li>
+      <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact Us</a></li>
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register-button">Register</button>
 	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-button">Login</button>
 	<a class="btn btn-primary" href="#" role="button">Logout</a>
   </ul>
 	</div>
+
+
+
   <!-- Tab panes -->
   <div class="tab-content">
   <div role="tabpanel" class="tab-pane fade in active" id="home">
 		<div class="container">
 			<div class="row clearfix">
-				<div class="col-lg-5 info">
-					<p>Code-O-Soccer is a coding competition conducted by Kharagpur RoboSoccer Students' Group in the month of October, the main aim of the event is to introduce the concept of autonomous soccer playing robots in students mind and motivating students to create a challenging strategy using our API on a three vs three robot match for which robots will be provided by us during the event. For this event, all you need is: 
-                      <br> i. Interest in programming and the zeal to try out new APIs <br>ii. Enthusiasm about autonomous soccer playing robots
+				<div class="col-lg-5 info" >
+					<p>Code-O-Soccer is a coding competition conducted by Kharagpur RoboSoccer Students' Group (KRSSG) in the month of October.
+             The main aim of the event is to introduce the concept of autonomous soccer playing robots in students' mind and motivating
+             students to create a challenging strategy using our API on a five vs five robot match for which robots will be provided by
+             us during the event. The participants will also be provided with a simulator with game environments (playground, robots,
+             score board, etc.) to test there codes. For this event, all you need is:
+            <br> i. Interest in programming and the zeal to try out new APIs
+            <br>ii. Enthusiasm about autonomous soccer playing robots
 					</p>
-                </div>
-				
+        </div>
+
 				<div class="col-lg-7">
 					<h3>Updates</h3>
 					<div class="updates">
@@ -59,9 +71,11 @@
 			</div>
 		</div>
   </div>
+
+
+
   <div role="tabpanel" class="tab-pane fade" id="dashboard">
 		<div class="row">
-		
 		<div class="panel panel-default col-lg-6">
   <!-- Default panel contents -->
 			<div class="panel-heading">Team Information</div>
@@ -71,29 +85,29 @@
   <!-- Table -->
 			<table class="table">
 				<tr class="active"><td class="active"></td>
-  <td class="success">kackbakbck</td>
-  <td class="warning">ajckeka</td>
-  <td class="danger">akckaebk</td>
-  <td class="info">ahbacnc</td></tr>
-				
+            <td class="success">kackbakbck</td>
+            <td class="warning">ajckeka</td>
+            <td class="danger">akckaebk</td>
+            <td class="info">ahbacnc</td>
+        </tr>
 			</table>
 		</div>
 		</div>
   </div>
   <div role="tabpanel" class="tab-pane fade" id="documentation"></div>
-		
-  
-  
-  
+
+
+
+
   <div role="tabpanel" class="tab-pane fade" id="faq">...</div>
   <div role="tabpanel" class="tab-pane fade" id="contact">...</div>
   </div>
   </div>
   </div>
-  
-  
 
-  
+
+
+
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
   <div class="modal fade" id="login-button" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -107,10 +121,10 @@
               <div class="row">
                   <div class="col-xs-6">
                       <div class="well">
-                          <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+                          <form name="loginform" id="loginForm" method="POST" action="/login/" novalidate="novalidate" onsubmit="return validateText()">
                               <div class="form-group">
                                   <label for="username" class="control-label">Username</label>
-                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="Teamname/Username">
                                   <span class="help-block"></span>
                               </div>
                               <div class="form-group">
@@ -118,7 +132,7 @@
                                   <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
                                   <span class="help-block"></span>
                               </div>
-                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username og password</div>
+
                               <div class="checkbox">
                                   <label>
                                       <input type="checkbox" name="remember" id="remember"> Remember login
@@ -180,36 +194,35 @@
         <div class="container-fluid">
          <div class="row">
           <div>
-            <form>
+            <form name="registration">
               <div class="form-group">
                 <label for="teamname">Teamname</label>
-                <input type="text" class="form-control" id="teamname" placeholder=" teamname/Username ">
+                <input type="text" class="form-control" id="teamname" name="teamname" placeholder="Username(6-11 Characters) ">
               </div>
               <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Password">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password(6-20 Characters)" onfocus="return validateTeamname()">
               </div>
               <div class="form-group">
                 <label for="cpassword">Confirm Password</label>
-                <input type="password" class="form-control" id="cpassword" placeholder="Re-enter Password">
+                <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Re-enter Password" onfocus="return validatePassword()">
               </div>
               <div class="form-group">
                 <label for="members">Number of members in your Team</label>
-                <select class="form-control" id="members">
+                <select class="form-control" id="members"  onfocus="return validateCPassword()">
                  <option>1</option>
                  <option>2</option>
                  <option>3</option>
-                 <option>4</option>
+                 <option selected>4</option>
                 </select>
               </div>
-
-               <button type="submit" class="btn btn-success btn-block" data-dismiss="modal" data-toggle="modal" data-target="#register-next" data-dismiss="modal">Next</button>
+               <button type="submit" id="step1" class="btn btn-success btn-block" data-dismiss="modal" data-toggle="modal" data-target="#register-next" data-dismiss="modal">Next</button>
             </form>
           </div>
         </div>
       </div>
     </div>
-  
+
     <div class="modal-footer">
         <button type="button" class="btn btn-failure btn" data-dismiss="modal">Close</button>
     <button type="button" class="btn btn-info btn" data-dismiss="modal" data-toggle="modal" data-target="#login-button">Login</button>
@@ -217,18 +230,18 @@
     </div>
   </div>
 </div>
-  
+
   <div class="container">
             <div class="row footer clearfix">
         <div class="">
         </div>
         <div>
-          
+
         </div>
       </div>
        </div>
 
-  
+
 
 
 
@@ -250,7 +263,7 @@
         <div class="container-fluid">
          <div class="row">
           <div>
-              
+
 
                       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                           <div class="panel panel-default">
@@ -263,7 +276,7 @@
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                               <div class="panel-body">
-                                               
+
                                                       <div class="panel-body">
                                                         <form role="form" id="member1">
                                                           <div class="row">
@@ -274,7 +287,7 @@
                                                             </div>
 
                                                             <div class="col-xs-6 col-sm-6 col-md-6">
-                                                              <div class="form-group">  
+                                                              <div class="form-group">
                                                               <div class="selectContainer">
                                                                   <select id="status1" name="status1" class="form-control input-sm" >
                                                                       <option> High School(Upto 12th) </option>
@@ -390,10 +403,10 @@
                                                                 </div>
                                                               </div>
                                                             </div>
-                                                          </div>                                                           
+                                                          </div>
                                                         </form>
-                                                    
-                                                  
+
+
                               </div>
                             </div>
                           </div>
@@ -407,7 +420,7 @@
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                               <div class="panel-body">
-                                                        
+
                                                       <div class="panel-body">
                                                             <form role="form" id="member2">
                                                           <div class="row">
@@ -418,7 +431,7 @@
                                                             </div>
 
                                                             <div class="col-xs-6 col-sm-6 col-md-6">
-                                                              <div class="form-group">  
+                                                              <div class="form-group">
                                                               <div class="selectContainer">
                                                                   <select id="status2" name="status2" class="form-control input-sm" >
                                                                       <option> High School(Upto 12th) </option>
@@ -534,9 +547,9 @@
                                                                 </div>
                                                               </div>
                                                             </div>
-                                                          </div>                                                           
+                                                          </div>
                                                         </form>
-                                                    
+
                               </div>
                             </div>
                           </div>
@@ -560,7 +573,7 @@
                                                             </div>
 
                                                             <div class="col-xs-6 col-sm-6 col-md-6">
-                                                              <div class="form-group">  
+                                                              <div class="form-group">
                                                               <div class="selectContainer">
                                                                   <select id="status3" name="status3" class="form-control input-sm" >
                                                                       <option> High School(Upto 12th) </option>
@@ -676,9 +689,9 @@
                                                                 </div>
                                                               </div>
                                                             </div>
-                                                          </div>                                                           
+                                                          </div>
                                                         </form>
-                                                    
+
                               </div>
                             </div>
                           </div>
@@ -702,7 +715,7 @@
                                                             </div>
 
                                                             <div class="col-xs-6 col-sm-6 col-md-6">
-                                                              <div class="form-group">  
+                                                              <div class="form-group">
                                                               <div class="selectContainer">
                                                                   <select id="status4" name="status4" class="form-control input-sm" >
                                                                       <option> High School(Upto 12th) </option>
@@ -818,9 +831,9 @@
                                                                 </div>
                                                               </div>
                                                             </div>
-                                                          </div>                                                         
-                                                        
-                                                    
+                                                          </div>
+
+
                               </div>
 
                             </div>
@@ -834,7 +847,7 @@
     </div>
 
 
-    
+
 	<script>
   $(function () {
     $('#myTab a:last').tab('show')
@@ -844,5 +857,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/myscript.js"></script>
   </body>
 </html>
