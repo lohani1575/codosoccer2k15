@@ -1,12 +1,62 @@
 function ClearForm()
 {
     document.registration.reset();
+    document.member1.reset();
+    document.member2.reset();
+    document.member3.reset();
+    document.member4.reset();
 }
-var validate;
-function validateTeamname()
+function validatetext(x,y)
 {
         validate = true;
-        var u = document.forms["registration"]["teamname"].value;
+        var u = document.forms[x][y].value;
+        var uLength = u.length;
+        var illegalChars = /\W/; // allow letters, numbers, and underscores
+        if (u == null || u == "")
+        {
+          alert("Name must be filled out");
+            validate     = false;
+        }
+        else if (illegalChars.test(u))
+        {
+          alert("Use of special characters in denied");
+            validate     = false;
+        }
+        teamname.focus;
+
+}
+function validatename(x,y)
+{
+        validate = true;
+        var u = document.forms[x][y].value;
+        var uLength = u.length;
+        var illegalChars = /\W/; // allow letters, numbers, and underscores
+        if (u == null || u == "")
+        {
+          alert("Name must be filled out");
+            validate     = false;
+        }
+        else if (uLength <4 || uLength > 11)
+        {
+          alert("Charater length is 4-11 ");
+            validate     = false;
+        }
+        else if (illegalChars.test(u))
+        {
+          alert("Use of special characters in denied");
+            validate     = false;
+        }
+        teamname.focus;
+
+}
+
+
+var validate;
+
+function validateTeamname(x,y)
+{
+        validate = true;
+        var u = document.forms[x][y].value;
         var uLength = u.length;
         var illegalChars = /\W/; // allow letters, numbers, and underscores
         if (u == null || u == "")
@@ -25,12 +75,11 @@ function validateTeamname()
             validate     = false;
         }
         teamname.focus;
-
 }
-function checkEmail()
+function checkEmail(x,y)
 {
-        var email = document.forms["loginform"]["email"].value;
-        var filter = /^(([^<>()[]\.,;:s@"]+(.[^<>()[]\.,;:s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/;
+        var email = document.forms[x][y].value;
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         if (!filter.test(email.value))
         {
         alert('Please provide a valid email address');
@@ -38,9 +87,27 @@ function checkEmail()
         validate = false;
         }
 }
-function validatePassword()
+
+
+function ValidateForm(){
+	var emailID=document.frmSample.txtEmail
+
+	if ((emailID.value==null)||(emailID.value=="")){
+		alert("Please Enter your Email ID")
+		emailID.focus()
+		return false
+	}
+	if (echeck(emailID.value)==false){
+		emailID.value=""
+		emailID.focus()
+		return false
+	}
+	return true
+ }
+</script>
+function validatePassword(x,y)
    {
-       var p = document.forms["registration"]["password"].value
+       var p = document.forms[x][y].value
        var pLength = p.length;
        if (p == null || p == "")
        {
@@ -54,10 +121,10 @@ function validatePassword()
        }
 
    }
-function validateCPassword()
+function validateCPassword(x,y)
    {
-       var p = document.forms["registration"]["password"].value
-       var cP = document.forms["registration"]["cpassword"].value
+       var p = document.forms[x][y].value
+       var cP = document.forms[x][y].value
        var pLength = p.length;
        if (p != cP)
        {
@@ -72,4 +139,25 @@ function validateForm()
      validateText();
      checkEmail();
      validatePassword();
+}
+
+
+
+function checkNum(x,y)
+{
+
+  var s_len=document.forms[x][y].value.length ;
+  var s_charcode = 0;
+    for (var s_i=0;s_i<s_len;s_i++)
+    {
+     s_charcode = x.value.charCodeAt(s_i);
+     if(!((s_charcode>=48 && s_charcode<=57)))
+      {
+         alert("Only Numeric Values Allowed");
+          x.value='';
+         x.focus();
+
+      }
+    }
+
 }

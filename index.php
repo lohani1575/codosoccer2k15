@@ -49,18 +49,21 @@
 
   <!-- Tab panes -->
   <div class="tab-content">
+
   <div role="tabpanel" class="tab-pane fade in active" id="home">
 		<div class="container">
 			<div class="row clearfix">
 				<div class="col-lg-5 info" >
-					<p>Code-O-Soccer is a coding competition conducted by Kharagpur RoboSoccer Students' Group (KRSSG) in the month of October.
+					<p class="text-justify">Code-O-Soccer is a coding competition conducted by Kharagpur RoboSoccer Students' Group (KRSSG). This is a<strong> first of its kind </strong>
+            competition wherein soccer strategies brewing within one's mind are implemented on robots using techniques of Artificial Intelligence.
              The main aim of the event is to introduce the concept of autonomous soccer playing robots in students' mind and motivating
              students to create a challenging strategy using our API on a five vs five robot match for which robots will be provided by
              us during the event. The participants will also be provided with a simulator with game environments (playground, robots,
              score board, etc.) to test there codes. For this event, all you need is:
             <br> i. Interest in programming and the zeal to try out new APIs
             <br>ii. Enthusiasm about autonomous soccer playing robots
-					</p>
+            <br> This time it is being conducted nation-wide as a online coding competition with online workshops for the event.
+
         </div>
 
 				<div class="col-lg-7">
@@ -71,7 +74,6 @@
 			</div>
 		</div>
   </div>
-
 
 
   <div role="tabpanel" class="tab-pane fade" id="dashboard">
@@ -99,7 +101,126 @@
 
 
 
-  <div role="tabpanel" class="tab-pane fade" id="faq">...</div>
+  <div role="tabpanel" class="tab-pane fade" id="faq">
+      <div class="container">
+        <div class="row clearfix">
+                  <div class="panel-group" id="accordion">
+                      <div class="faqHeader"></div>
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Will there be workshops for this event?</a>
+                              </h4>
+                          </div>
+                          <div id="collapseOne" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                  Since this event is first of its kind being conducted in India, ONLINE workshops through Skype or Google Hangouts will be conducted
+                                  to introduce the event and explain its technical details. The details of the workshops will be updated on the website and mailed to
+                                  the participants.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Are coding skills necessary for participating in this event?</a>
+                              </h4>
+                          </div>
+                          <div id="collapseTwo" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                  Absolutely NOT, the event is about planning Soccer strategies and framing them in your codes. You can team up with people
+                                  having coding skills. Through this event you can not only improve your coding skills but also develop teamwork.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Should the team members particularly belong to the same college?</a>
+                              </h4>
+                          </div>
+                          <div id="collapseThree" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                  No, you can make a team with people from various feilds and institutes. All you need to have is a common zeal for competative coding.
+                                  Each member can contribute to the code from there room via some open source platform like GITHUB.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Are there any certifications for this event?</a>
+                              </h4>
+                          </div>
+                          <div id="collapseFive" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                  Yes, every participant will be awarded an online participation certificate under KRSSG research group, IIT Kharagpur.
+                                  Top 20 teams will be awarded special certificate for out standing performance which will be dropped at their addresses.
+                                  Top 8 Teams will get an opportunity to come to IIT Kharagpur and compete against other teams on actual bots and also compete
+                                  against the team that participated in FIRA Malasia'13 and Beijing'15.
+                                  <br>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Which coding language will be involved in the competition?</a>
+                              </h4>
+                          </div>
+                          <div id="collapseSix" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                  For this events all the codes have to be written in C/C++. Participants will be provided with APIs to code and Documentation
+                                  explaining them.
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">I'm having trouble in working out on the codes, installing the API and the Simulator. What do I do?</a>
+                              </h4>
+                          </div>
+                          <div id="collapseSeven" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                  All queries regarding this should be asked on the forum page for the benefit of other participants.
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">How will our codes be Evaluated?</a>
+                              </h4>
+                          </div>
+                          <div id="collapseEight" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                  The codes will be eveluated on the same Simulator that will be provided to you pitting your code against other teams in a League Tournament.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">
+                                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">How to make submissions?</a>
+                              </h4>
+                          </div>
+                          <div id="collapseEight" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                  Login you teams' account and GoTo Dashboard -> File Upload. Make a zip Folder of your codes and upload it. Before the last Submission
+                                  you can upload your codes as many times as you want. Everytime your prev codes will be over-written in that case
+                              </div>
+                          </div>
+                      </div>
+
+
+
+
+
+        </div>
+  </div>
   <div role="tabpanel" class="tab-pane fade" id="contact">...</div>
   </div>
   </div>
@@ -137,7 +258,7 @@
                                   <label>
                                       <input type="checkbox" name="remember" id="remember"> Remember login
                                   </label>
-                                  <p class="help-block">(if this is a private computer)</p>
+                                  <p class="help-block">(if this is a private computer)
                               </div>
                               <button type="submit" class="btn btn-success btn-block" data-loading-text="Submitting...">Login</button>
                               <button type="button" class="btn btn-failure   btn-block" data-dismiss="modal" data-toggle="modal" data-target="#register-button"> Forgot Password </button>
@@ -145,7 +266,7 @@
                       </div>
                   </div>
                   <div class="col-xs-6">
-                      <p class="lead">Register now for <span class="text-success">Code-O-Soccer 2015</span></p>
+                      <p class="lead">Register now for <span class="text-success">Code-O-Soccer 2015</span>
                       <ul class="list-unstyled" style="line-height: 2">
                           <li><span class="fa fa-check text-success"></span> Show Your Coding Skills </li>
                           <li><span class="fa fa-check text-success"></span> Compete against people over the Country</li>
@@ -252,6 +373,14 @@
 
 
 
+
+
+
+
+
+
+
+
 <div class="modal fade" id="register-next" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" style="overflow-y: scroll; max-height:85%;  margin-top: 50px; margin-bottom:50px;">
     <div class="modal-content">
@@ -278,18 +407,18 @@
                               <div class="panel-body">
 
                                                       <div class="panel-body">
-                                                        <form role="form" id="member1">
+                                                        <form role="form" id="member1" name="member1">
                                                           <div class="row">
                                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                               <div class="form-group">
-                                                                <input type="text" name="name1" id="name1" class="form-control input-sm" placeholder="Name">
+                                                                <input type="text" name="name1" id="name1" class="form-control input-sm" placeholder="Name" >
                                                               </div>
                                                             </div>
 
                                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                               <div class="form-group">
                                                               <div class="selectContainer">
-                                                                  <select id="status1" name="status1" class="form-control input-sm" >
+                                                                  <select id="status1" name="status1" class="form-control input-sm" onfocus="return validatename('member1','name1')">
                                                                       <option> High School(Upto 12th) </option>
                                                                       <option> UnderGraduate 1st year </option>
                                                                       <option> UnderGraduate 2nd year </option>
@@ -313,7 +442,7 @@
                                                             </div>
                                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                               <div class="form-group">
-                                                                <input type="text" name="phone1" id="phone1" class="form-control input-sm" placeholder="Mobile Number">
+                                                                <input type="text" name="phone1" id="phone1" class="form-control input-sm" placeholder="Mobile Number" >
                                                               </div>
                                                             </div>
                                                           </div>
@@ -328,7 +457,7 @@
                                                               <div class="form-group">
                                                                 <div class="selectContainer">
                                                                   <select id="state1" name="state1"  class="form-control input-sm">
-                                                                      <option value="0">Select State</option>
+                                                                      <option value="0" onfocus="return validatetext('member1','institute1')">Select State</option>
                                                                                               <option value="1">
                                                                         Andaman & Nicobar                      </option>
                                                                                               <option value="2">
@@ -410,6 +539,23 @@
                               </div>
                             </div>
                           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                           <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingTwo">
                               <h4 class="panel-title">
@@ -422,7 +568,7 @@
                               <div class="panel-body">
 
                                                       <div class="panel-body">
-                                                            <form role="form" id="member2">
+                                                        <form role="form" id="member2" name="member2">
                                                           <div class="row">
                                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                               <div class="form-group">
@@ -544,15 +690,30 @@
                                                                                               <option value="36">
                                                                         West Bengal                      </option>
                                                                                           </select>
+                                                                    </div>
+                                                                  </div>
                                                                 </div>
                                                               </div>
-                                                            </div>
-                                                          </div>
-                                                        </form>
+                                                            </form>
 
                               </div>
                             </div>
                           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                           <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingThree">
                               <h4 class="panel-title">
@@ -564,7 +725,7 @@
                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                               <div class="panel-body">
                                                       <div class="panel-body">
-                                                            <form role="form" id="member3">
+                                                        <form role="form" id="member3" name="member3">
                                                           <div class="row">
                                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                               <div class="form-group">
@@ -703,10 +864,25 @@
                                 </a>
                               </h4>
                             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                             <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                               <div class="panel-body">
                                                       <div class="panel-body">
-                                                            <form role="form" id="member4">
+                                                        <form role="form" id="member4" name="member4">
                                                           <div class="row">
                                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                               <div class="form-group">
@@ -832,7 +1008,6 @@
                                                               </div>
                                                             </div>
                                                           </div>
-
 
                               </div>
 
