@@ -21,31 +21,26 @@
         text-decoration: none;
           /*font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;*/
         }
-
         .containermarquee {
         margin: 1em auto;
         overflow: hidden;
         position: relative;
         box-sizing: border-box;
         }
-
         .marquee {
         top: 6em;
         position: relative;
         box-sizing: border-box;
         animation: marquee 15s linear infinite;
         }
-
         .marquee:hover {
         animation-play-state: paused;
         }
-
         /* Make it move! */
         @keyframes marquee {
         0%   { top:   8em }
         100% { top: -11em }
         }
-
         /* Make it look pretty */
         .microsoft .marquee {
         margin: 0;
@@ -53,7 +48,6 @@
         line-height: 1.5em;
         font: 1em 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
         }
-
         .microsoft:before, .microsoft::before,
         .microsoft:after,  .microsoft::after {
         left: 0;
@@ -64,29 +58,24 @@
         width: 100%; height: 2em;
         background-image: linear-gradient(top, #FFF, rgba(255,255,255,0));
         }
-
         .microsoft:after, .microsoft::after {
         bottom: 0;
         transform: rotate(180deg);
         }
-
         .microsoft:before, .microsoft::before {
         top: 0;
         }
-
         /* Style the links */
         .vanity {
         color: #333;
         text-align: center;
         font: .75em 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
         }
-
         .vanity a, .microsoft a {
         color: #1570A6;
         transition: color .5s;
         text-decoration: none;
         }
-
         .vanity a:hover, .microsoft a:hover {
         color: #F65314;
         }
@@ -395,8 +384,7 @@
                                               <div>
                                                 KRSSG Lab, Technology Students' Gymkhana<br />
                                               IIT Kharagpur<br />
-                                              West Be<br />
-                                              service@company.com<br />
+                                              West Bengal<br />
                                               </div>
                                               <hr />
                                               <div id="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.9235467484923!2d87.30252999999999!3d22.318730999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d4407422c1675%3A0xa2d9d15d09ca4c4!2sTechnology+Student+Gymkhana!5e0!3m2!1sen!2sin!4v1433314583855" width="500" height="400" frameborder="0" style="border:0"></iframe></div>
@@ -1255,7 +1243,6 @@
 		        //setTimeout('erase()', 500);
 		    }
 		}
-
 		function cursorAnimation() {
 		    $('#cursor').animate({
 		        opacity: 0
@@ -1263,8 +1250,6 @@
 		        opacity: 1
 		    }, 'fast', 'swing');
 		}
-
-
 		</script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
