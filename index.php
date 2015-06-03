@@ -12,7 +12,16 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css" /> <!-- This is a css file for this page, you can remove it-->
   <style>
+        span.logo a{
+        color:grey;
+        text-decoration: none;
+          /*font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;*/
+        }
+
         .containermarquee {
         margin: 1em auto;
         overflow: hidden;
@@ -102,13 +111,18 @@
        <!-- Preload design ends -->
 
 
+
        <div class="containermarquee">
        <div class="row header clearfix">
 			 <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
 					<img src="img/logo.png" class="img-responsive center-block"  alt="logo">
 		  	</div>
 				<div>
-					<h1 class="col-lg-4 col-sm-6 col-md-5 col-xs-12" style="font-size:30px;">Code-O-Soccer <small>2k15</small><br> <small>IIT KHARAGPUR</small></h1>
+          <section id="main_section">
+          <div align="center">
+              <h2><span class="logo" id="caption"></span><span class="logo" style="font-size:2em; font-weight:900;" id="cursor">_</span></h2>
+          </div>
+        </section>
 				</div>
 			</div>
       </div>
@@ -1222,6 +1236,36 @@
 
 
 <!-- ALL SCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+		<script >
+		var captionLength = 0;
+		var caption = "Code-O-Soccer 2015 @ <a href='htp://krssg.in/' target='none'>Kharagpur RoboSoccer Students' Group</a>";
+		$(document).ready(function() {
+		    setInterval ('cursorAnimation()', 200);
+		    captionEl = $('#caption');
+		    type();
+		});
+		function type() {
+		    captionEl.html(caption.substr(0, captionLength++));
+		    if(captionLength < caption.length+1) {
+		        setTimeout('type()', 50);
+		    } else {
+		        //setTimeout('erase()', 500);
+		    }
+		}
+
+		function cursorAnimation() {
+		    $('#cursor').animate({
+		        opacity: 0
+		    }, 'fast', 'swing').animate({
+		        opacity: 1
+		    }, 'fast', 'swing');
+		}
+
+
+		</script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="js/main.js"></script>
