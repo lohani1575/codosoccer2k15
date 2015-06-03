@@ -6,15 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Code-O-Soccer || KRSSG </title>
-
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+  <style>
+        .containermarquee {
+        margin: 1em auto;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        }
+
+        .marquee {
+        top: 6em;
+        position: relative;
+        box-sizing: border-box;
+        animation: marquee 15s linear infinite;
+        }
+
+        .marquee:hover {
+        animation-play-state: paused;
+        }
+
+        /* Make it move! */
+        @keyframes marquee {
+        0%   { top:   8em }
+        100% { top: -11em }
+        }
+
+        /* Make it look pretty */
+        .microsoft .marquee {
+        margin: 0;
+        padding: 0 1em;
+        line-height: 1.5em;
+        font: 1em 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+        }
+
+        .microsoft:before, .microsoft::before,
+        .microsoft:after,  .microsoft::after {
+        left: 0;
+        z-index: 1;
+        content: '';
+        position: absolute;
+        pointer-events: none;
+        width: 100%; height: 2em;
+        background-image: linear-gradient(top, #FFF, rgba(255,255,255,0));
+        }
+
+        .microsoft:after, .microsoft::after {
+        bottom: 0;
+        transform: rotate(180deg);
+        }
+
+        .microsoft:before, .microsoft::before {
+        top: 0;
+        }
+
+        /* Style the links */
+        .vanity {
+        color: #333;
+        text-align: center;
+        font: .75em 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+        }
+
+        .vanity a, .microsoft a {
+        color: #1570A6;
+        transition: color .5s;
+        text-decoration: none;
+        }
+
+        .vanity a:hover, .microsoft a:hover {
+        color: #F65314;
+        }
+  </style>
   </head>
+  <body onload="ClearForm()"  class="demo">
 
 
-  <body onload="ClearForm()">
-       <div class="container">
+      <!--Preload Design -->
+      <div id="demo-content">
+
+        <header class="entry-header">
+
+          <div id="loader-wrapper">
+          <div id="loader"></div>
+
+          <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div>
+
+        </div>
+        <div id="content">
+       <!-- Preload design ends -->
+
+
+       <div class="containermarquee">
        <div class="row header clearfix">
 			 <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
 					<img src="img/logo.png" class="img-responsive center-block"  alt="logo">
@@ -53,7 +141,7 @@
   <div role="tabpanel" class="tab-pane fade in active" id="home">
 		<div class="container">
 			<div class="row clearfix">
-				<div class="col-lg-5 info" >
+        <div class="col-lg-7 ">
 					<p class="text-justify">Code-O-Soccer is a coding competition conducted by Kharagpur RoboSoccer Students' Group (KRSSG). This is a<strong> first of its kind </strong>
             competition wherein soccer strategies brewing within one's mind are implemented on robots using techniques of Artificial Intelligence.
              The main aim of the event is to introduce the concept of autonomous soccer playing robots in students' mind and motivating
@@ -65,11 +153,16 @@
             <br> This time it is being conducted nation-wide as a online coding competition with online workshops for the event.
 
         </div>
+        <div class="col-lg-5 info" >
 
-				<div class="col-lg-7">
 					<h3>Updates</h3>
 					<div class="updates">
-					</div>
+            <div class="microsoft containermarquee">
+            <p class="marquee">Windows 8 and Windows RT are focused on your life—your friends and family, your apps, and your stuff. With new things like the <a href="http://windows.microsoft.com/en-US/windows-8/start-screen">Start screen</a>, <a href="http://windows.microsoft.com/en-US/windows-8/charms">charms</a>, and a <a href="http://windows.microsoft.com/en-US/windows-8/microsoft-account">
+              Microsoft account</a>, you can spend less time searching and more time doing.</p>
+            </div>
+
+          </div>
 				</div>
 			</div>
 		</div>
@@ -204,10 +297,10 @@
                       <div class="panel panel-default">
                           <div class="panel-heading">
                               <h4 class="panel-title">
-                                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">How to make submissions?</a>
+                                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">How to make submissions?</a>
                               </h4>
                           </div>
-                          <div id="collapseEight" class="panel-collapse collapse">
+                          <div id="collapseNine" class="panel-collapse collapse">
                               <div class="panel-body">
                                   Login you teams' account and GoTo Dashboard -> File Upload. Make a zip Folder of your codes and upload it. Before the last Submission
                                   you can upload your codes as many times as you want. Everytime your prev codes will be over-written in that case
@@ -218,10 +311,97 @@
 
 
 
-
+                    </div>
+                </div>
         </div>
   </div>
-  <div role="tabpanel" class="tab-pane fade" id="contact">...</div>
+  <div role="tabpanel" class="tab-pane fade" id="contact">
+
+
+
+
+
+
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="well well-sm">
+                                      <form class="form-horizontal" method="post">
+                                          <fieldset>
+                                              <legend class="text-center header">Contact us</legend>
+                                              <div class="form-group">
+                                                  <div class="col-md-10 col-md-offset-1">
+                                                      <input id="email" name="email" type="text" placeholder="TO : contact-us@krssg.in" class="form-control" readonly>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <div class="col-md-10 col-md-offset-1">
+                                                      <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <div class="col-md-10 col-md-offset-1">
+                                                      <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                                                  </div>
+                                              </div>
+
+                                              <div class="form-group">
+                                                  <div class="col-md-10 col-md-offset-1">
+                                                      <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                                  </div>
+                                              </div>
+
+                                              <div class="form-group">
+                                                  <div class="col-md-10 col-md-offset-1">
+                                                      <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                                                  </div>
+                                              </div>
+
+                                              <div class="form-group">
+                                                  <div class="col-md-10 col-md-offset-1">
+                                                      <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+                                                  </div>
+                                              </div>
+
+                                              <div class="form-group">
+                                                  <div class="col-md-12 text-center">
+                                                      <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                                  </div>
+                                              </div>
+                                          </fieldset>
+                                      </form>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div>
+                                      <div class="panel panel-default">
+                                          <div class="text-center header">Our Lab</div>
+                                          <div class="panel-body text-center">
+                                              <h4>Address:</h4>
+                                              <div>
+                                                KRSSG Lab, Technology Students' Gymkhana<br />
+                                              IIT Kharagpur<br />
+                                              West Be<br />
+                                              service@company.com<br />
+                                              </div>
+                                              <hr />
+                                              <div id="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.9235467484923!2d87.30252999999999!3d22.318730999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d4407422c1675%3A0xa2d9d15d09ca4c4!2sTechnology+Student+Gymkhana!5e0!3m2!1sen!2sin!4v1433314583855" width="500" height="400" frameborder="0" style="border:0"></iframe></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+
+
+
+
+
+
+
+
+  </div>
   </div>
   </div>
   </div>
@@ -1020,9 +1200,31 @@
         </div>
       </div>
     </div>
+</div>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ALL SCRIPTS -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/main.js"></script>
 	<script>
   $(function () {
     $('#myTab a:last').tab('show')

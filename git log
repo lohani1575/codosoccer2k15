@@ -1,0 +1,855 @@
+[1mdiff --git a/index1.php b/index1.php[m
+[1mdeleted file mode 100644[m
+[1mindex 0c1de57..0000000[m
+[1m--- a/index1.php[m
+[1m+++ /dev/null[m
+[36m@@ -1,848 +0,0 @@[m
+[31m-<!DOCTYPE html>[m
+[31m-<html lang="en">[m
+[31m-  <head>[m
+[31m-    <meta charset="utf-8">[m
+[31m-    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[31m-    <meta name="viewport" content="width=device-width, initial-scale=1">[m
+[31m-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->[m
+[31m-    <title>Code-O-Soccer || KRSSG </title>[m
+[31m-[m
+[31m-    <!-- Bootstrap -->[m
+[31m-    <link href="css/bootstrap.min.css" rel="stylesheet">[m
+[31m-	<link href="css/style.css" rel="stylesheet">[m
+[31m-[m
+[31m-  </head>[m
+[31m-  <body>[m
+[31m-       <div class="container">[m
+[31m-            <div class="row header clearfix">[m
+[31m-				<div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">[m
+[31m-					<img src="img/logo.png" class="img-responsive center-block"  alt="logo">[m
+[31m-				</div>[m
+[31m-				<div>[m
+[31m-					<h1 class="col-lg-4 col-sm-6 col-md-5 col-xs-12" style="font-size:30px;">Code-O-Soccer <small>2k15</small><br> <small>IIT KHARAGPUR</small></h1>[m
+[31m-				</div>[m
+[31m-			</div>[m
+[31m-       </div>[m
+[31m-    <div class="jumbotron">[m
+[31m-	<div class="container main">[m
+[31m-	[m
+[31m-	<div role="tabpanel" class="tabs">[m
+[31m-[m
+[31m-  <!-- Nav tabs -->[m
+[31m-  <ul class="nav nav-tabs" role="tablist">[m
+[31m-    <li role="presentation" class="active" class="col-lg-2"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" >Home</a></li>[m
+[31m-    <li role="presentation"><a href="#dashboard" aria-controls="dashboard" role="tab" data-toggle="tab">Dashboard</a></li>[m
+[31m-	<li role="presentation"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab">Documentation</a></li>[m
+[31m-	<li role="presentation"><a href="#faq" aria-controls="faq" role="tab" data-toggle="tab">FAQs</a></li>[m
+[31m-    <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact Us</a></li>[m
+[31m-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register-button">Register</button>[m
+[31m-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-button">Login</button>[m
+[31m-	<a class="btn btn-primary" href="#" role="button">Logout</a>[m
+[31m-  </ul>[m
+[31m-	</div>[m
+[31m-  <!-- Tab panes -->[m
+[31m-  <div class="tab-content">[m
+[31m-  <div role="tabpanel" class="tab-pane fade in active" id="home">[m
+[31m-		<div class="container">[m
+[31m-			<div class="row clearfix">[m
+[31m-				<div class="col-lg-5 info">[m
+[31m-					<p>Code-O-Soccer is a coding competition conducted by Kharagpur RoboSoccer Students' Group in the month of October, the main aim of the event is to introduce the concept of autonomous soccer playing robots in students mind and motivating students to create a challenging strategy using our API on a three vs three robot match for which robots will be provided by us during the event. For this event, all you need is: [m
+[31m-                      <br> i. Interest in programming and the zeal to try out new APIs <br>ii. Enthusiasm about autonomous soccer playing robots[m
+[31m-					</p>[m
+[31m-                </div>[m
+[31m-				[m
+[31m-				<div class="col-lg-7">[m
+[31m-					<h3>Updates</h3>[m
+[31m-					<div class="updates">[m
+[31m-					</div>[m
+[31m-				</div>[m
+[31m-			</div>[m
+[31m-		</div>[m
+[31m-  </div>[m
+[31m-  <div role="tabpanel" class="tab-pane fade" id="dashboard">[m
+[31m-		<div class="row">[m
+[31m-		[m
+[31m-		<div class="panel panel-default col-lg-6">[m
+[31m-  <!-- Default panel contents -->[m
+[31m-			<div class="panel-heading">Team Information</div>[m
+[31m-			<div class="panel-body">[m
+[31m-				Team Spartan[m
+[31m-			</div>[m
+[31m-  <!-- Table -->[m
+[31m-			<table class="table">[m
+[31m-				<tr class="active"><td class="active"></td>[m
+[31m-  <td class="success">kackbakbck</td>[m
+[31m-  <td class="warning">ajckeka</td>[m
+[31m-  <td class="danger">akckaebk</td>[m
+[31m-  <td class="info">ahbacnc</td></tr>[m
+[31m-				[m
+[31m-			</table>[m
+[31m-		</div>[m
+[31m-		</div>[m
+[31m-  </div>[m
+[31m-  <div role="tabpanel" class="tab-pane fade" id="documentation"></div>[m
+[31m-		[m
+[31m-  [m
+[31m-  [m
+[31m-  [m
+[31m-  <div role="tabpanel" class="tab-pane fade" id="faq">...</div>[m
+[31m-  <div role="tabpanel" class="tab-pane fade" id="contact">...</div>[m
+[31m-  </div>[m
+[31m-  </div>[m
+[31m-  </div>[m
+[31m-  [m
+[31m-  [m
+[31m-[m
+[31m-  [m
+[31m-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">[m
+[31m-[m
+[31m-  <div class="modal fade" id="login-button" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">[m
+[31m-  <div class="modal-dialog">[m
+[31m-    <div class="modal-content">[m
+[31m-            <div class="modal-header">[m
+[31m-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>[m
+[31m-              <h4 class="modal-title" id="myModalLabel">LOGIN</h4>[m
+[31m-          </div>[m
+[31m-          <div class="modal-body">[m
+[31m-              <div class="row">[m
+[31m-                  <div class="col-xs-6">[m
+[31m-                      <div class="well">[m
+[31m-                          <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">[m
+[31m-                              <div class="form-group">[m
+[31m-                                  <label for="username" class="control-label">Username</label>[m
+[31m-                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">[m
+[31m-                                  <span class="help-block"></span>[m
+[31m-                              </div>[m
+[31m-                              <div class="form-group">[m
+[31m-                                  <label for="password" class="control-label">Password</label>[m
+[31m-                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">[m
+[31m-                                  <span class="help-block"></span>[m
+[31m-                              </div>[m
+[31m-                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username og password</div>[m
+[31m-                              <div class="checkbox">[m
+[31m-                                  <label>[m
+[31m-                                      <input type="checkbox" name="remember" id="remember"> Remember login[m
+[31m-                                  </label>[m
+[31m-                                  <p class="help-block">(if this is a private computer)</p>[m
+[31m-                              </div>[m
+[31m-                              <button type="submit" class="btn btn-success btn-block" data-loading-text="Submitting...">Login</button>[m
+[31m-                              <button type="button" class="btn btn-failure   btn-block" data-dismiss="modal" data-toggle="modal" data-target="#register-button"> Forgot Password </button>[m
+[31m-                          </form>[m
+[31m-                      </div>[m
+[31m-                  </div>[m
+[31m-                  <div class="col-xs-6">[m
+[31m-                      <p class="lead">Register now for <span class="text-success">Code-O-Soccer 2015</span></p>[m
+[31m-                      <ul class="list-unstyled" style="line-height: 2">[m
+[31m-                          <li><span class="fa fa-check text-success"></span> Show Your Coding Skills </li>[m
+[31m-                          <li><span class="fa fa-check text-success"></span> Compete against people over the Country</li>[m
+[31m-                          <li><span class="fa fa-check text-success"></span> First of its kind Coding Competition </li>[m
+[31m-                          <li><span class="fa fa-check text-success"></span> Get Certificates and Win Exciting Prizes </li>[m
+[31m-                          <li><a href="/read-more/"><u>Read more</u></a></li>[m
+[31m-                      </ul>[m
+[31m-                      <button type="button" class="btn btn-info btn-block" data-dismiss="modal" data-toggle="modal" data-target="#register-button"> Register Here </button>[m
+[31m-                  </div>[m
+[31m-              </div>[m
+[31m-          </div>[m
+[31m-      </div>[m
+[31m-  </div>[m
+[31m-</div>[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-  <div class="modal fade" id="register-button" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">[m
+[31m-  <div class="modal-dialog" >[m
+[31m-    <div class="modal-content">[m
+[31m-      <div class="modal-header">[m
+[31m-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>[m
+[31m-        <h4 class="modal-title" id="myModalLabel">Register</h4>[m
+[31m-      </div>[m
+[31m-      <div class="modal-body">[m
+[31m-        <div class="container-fluid">[m
+[31m-         <div class="row">[m
+[31m-          <div>[m
+[31m-            <form>[m
+[31m-              <div class="form-group">[m
+[31m-                <label for="teamname">Teamname</label>[m
+[31m-                <input type="text" class="form-control" id="teamname" placeholder=" teamname/Username ">[m
+[31m-              </div>[m
+[31m-              <div class="form-group">[m
+[31m-                <label for="password">Password</label>[m
+[31m-                <input type="password" class="form-control" id="password" placeholder="Password">[m
+[31m-              </div>[m
+[31m-              <div class="form-group">[m
+[31m-                <label for="cpassword">Confirm Password</label>[m
+[31m-                <input type="password" class="form-control" id="cpassword" placeholder="Re-enter Password">[m
+[31m-              </div>[m
+[31m-              <div class="form-group">[m
+[31m-                <label for="members">Number of members in your Team</label>[m
+[31m-                <select class="form-control" id="members">[m
+[31m-                 <option>1</option>[m
+[31m-                 <option>2</option>[m
+[31m-                 <option>3</option>[m
+[31m-                 <option>4</option>[m
+[31m-                </select>[m
+[31m-              </div>[m
+[31m-[m
+[31m-               <button type="submit" class="btn btn-success btn-block" data-dismiss="modal" data-toggle="modal" data-target="#register-next" data-dismiss="modal">Next</button>[m
+[31m-            </form>[m
+[31m-          </div>[m
+[31m-        </div>[m
+[31m-      </div>[m
+[31m-    </div>[m
+[31m-  [m
+[31m-    <div class="modal-footer">[m
+[31m-        <button type="button" class="btn btn-failure btn" data-dismiss="modal">Close</button>[m
+[31m-    <button type="button" class="btn btn-info btn" data-dismiss="modal" data-toggle="modal" data-target="#login-button">Login</button>[m
+[31m-      </div>[m
+[31m-    </div>[m
+[31m-  </div>[m
+[31m-</div>[m
+[31m-  [m
+[31m-  <div class="container">[m
+[31m-            <div class="row footer clearfix">[m
+[31m-        <div class="">[m
+[31m-        </div>[m
+[31m-        <div>[m
+[31m-          [m
+[31m-        </div>[m
+[31m-      </div>[m
+[31m-       </div>[m
+[31m-[m
+[31m-  [m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-<div class="modal fade" id="register-next" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">[m
+[31m-  <div class="modal-dialog" style="overflow-y: scroll; max-height:85%;  margin-top: 50px; margin-bottom:50px;">[m
+[31m-    <div class="modal-content">[m
+[31m-      <div class="modal-header">[m
+[31m-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>[m
+[31m-        <h4 class="modal-title" id="myModalLabel">Team Details</h4>[m
+[31m-      </div>[m
+[31m-      <div class="modal-body">[m
+[31m-        <div class="container-fluid">[m
+[31m-         <div class="row">[m
+[31m-          <div>[m
+[31m-              [m
+[31m-[m
+[31m-                      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">[m
+[31m-                          <div class="panel panel-default">[m
+[31m-                            <div class="panel-heading" role="tab" id="headingOne">[m
+[31m-                              <h4 class="panel-title">[m
+[31m-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">[m
+[31m-                                  Member 1 Details[m
+[31m-                                </a>[m
+[31m-                              </h4>[m
+[31m-                            </div>[m
+[31m-                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">[m
+[31m-                              <div class="panel-body">[m
+[31m-                                               [m
+[31m-                                                      <div class="panel-body">[m
+[31m-                                                        <form role="form" id="member1">[m
+[31m-                                                          <div class="row">[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <input type="text" name="name1" id="name1" class="form-control input-sm" placeholder="Name">[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">  [m
+[31m-                                                              <div class="selectContainer">[m
+[31m-                                                                  <select id="status1" name="status1" class="form-control input-sm" >[m
+[31m-                                                                      <option> High School(Upto 12th) </option>[m
+[31m-                                                                      <option> UnderGraduate 1st year </option>[m
+[31m-                                                                      <option> UnderGraduate 2nd year </option>[m
+[31m-                                                                      <option> UnderGraduate 3rd year </option>[m
+[31m-                                                                      <option> UnderGraduate 4th year </option>[m
+[31m-                                                                      <option> UnderGraduate 5th year </option>[m
+[31m-                                                                      <option> PostGraduate </option>[m
+[31m-                                                                      <option> Research Scholar </option>[m
+[31m-                                                                      <option> Others </option>[m
+[31m-                                                                  </select>[m
+[31m-                                                              </div>[m
+[31m-                                                          </div>[m
+[31m-                                                            </div>[m
+[31m-                                                          </div>[m
+[31m-[m
+[31m-                                                          <div class="row">[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <input type="text" name="email1" id="email1" class="form-control input-sm" placeholder="Email">[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <input type="text" name="phone1" id="phone1" class="form-control input-sm" placeholder="Mobile Number">[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-                                                          </div>[m
+[31m-[m
+[31m-                                                          <div class="row">[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <input type="text" name="institute1" id="institute1" class="form-control input-sm" placeholder="College/University">[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <div class="selectContainer">[m
+[31m-                                                                  <select id="state1" name="state1"  class="form-control input-sm">[m
+[31m-                                                                      <option value="0">Select State</option>[m
+[31m-                                                                                              <option value="1">[m
+[31m-                                                                        Andaman & Nicobar                      </option>[m
+[31m-                                                                                              <option value="2">[m
+[31m-                                                                        Andhra Pradesh                      </option>[m
+[31m-                                                                                              <option value="3">[m
+[31m-                                                                        Arunachal Pradesh                      </option>[m
+[31m-                                                                                              <option value="4">[m
+[31m-                                                                        Assam                      </option>[m
+[31m-                                                                                              <option value="5">[m
+[31m-                                                                        Bihar                      </option>[m
+[31m-                                                                                              <option value="6">[m
+[31m-                                                                        Chandigarh                      </option>[m
+[31m-                                                                                              <option value="7">[m
+[31m-                                                                        Chattisgarh                      </option>[m
+[31m-                                                                                              <option value="8">[m
+[31m-                                                                        Dadra & Nagar                      </option>[m
+[31m-                                                                                              <option value="9">[m
+[31m-                                                                        Daman & Diu                      </option>[m
+[31m-                                                                                              <option value="10">[m
+[31m-                                                                        Delhi                      </option>[m
+[31m-                                                                                              <option value="11">[m
+[31m-                                                                        Goa                      </option>[m
+[31m-                                                                                              <option value="12">[m
+[31m-                                                                        Gujrat                      </option>[m
+[31m-                                                                                              <option value="13">[m
+[31m-                                                                        Haryana                      </option>[m
+[31m-                                                                                              <option value="14">[m
+[31m-                                                                        Himachal Pradesh                     </option>[m
+[31m-                                                                                              <option value="15">[m
+[31m-                                                                        Jammu & Kashmir                      </option>[m
+[31m-                                                                                              <option value="16">[m
+[31m-                                                                        Jharkhand                      </option>[m
+[31m-                                                                                              <option value="17">[m
+[31m-                                                                        Karnataka                      </option>[m
+[31m-                                                                                              <option value="18">[m
+[31m-                                                                        Kerala                      </option>[m
+[31m-                                                                                              <option value="19">[m
+[31m-                                                                        Lakshdweep                      </option>[m
+[31m-                                                                                              <option value="20">[m
+[31m-                                                                        Madhya Pradesh                      </option>[m
+[31m-                                                                                              <option value="21">[m
+[31m-                                                                        Maharashtra                      </option>[m
+[31m-                                                                                              <option value="22">[m
+[31m-                                                                        Manipur                      </option>[m
+[31m-                                                                                              <option value="23">[m
+[31m-                                                                        Meghalaya                      </option>[m
+[31m-                                                                                              <option value="24">[m
+[31m-                                                                        Mizoram                      </option>[m
+[31m-                                                                                              <option value="25">[m
+[31m-                                                                        Nagaland                      </option>[m
+[31m-                                                                                              <option value="26">[m
+[31m-                                                                        Orissa                      </option>[m
+[31m-                                                                                              <option value="27">[m
+[31m-                                                                        Pondichery                      </option>[m
+[31m-                                                                                              <option value="28">[m
+[31m-                                                                        Punjab                      </option>[m
+[31m-                                                                                              <option value="30">[m
+[31m-                                                                        Rajasthan                      </option>[m
+[31m-                                                                                              <option value="31">[m
+[31m-                                                                        Sikkim                      </option>[m
+[31m-                                                                                              <option value="32">[m
+[31m-                                                                        Tamil Nadu                      </option>[m
+[31m-                                                                                              <option value="33">[m
+[31m-                                                                        Tripura                      </option>[m
+[31m-                                                                                              <option value="34">[m
+[31m-                                                                        Uttar Pradesh                      </option>[m
+[31m-                                                                                              <option value="35">[m
+[31m-                                                                        Uttaranchal                      </option>[m
+[31m-                                                                                              <option value="36">[m
+[31m-                                                                        West Bengal                      </option>[m
+[31m-                                                                                          </select>[m
+[31m-                                                                </div>[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-                                                          </div>                                                           [m
+[31m-                                                        </form>[m
+[31m-                                                    [m
+[31m-                                                  [m
+[31m-                              </div>[m
+[31m-                            </div>[m
+[31m-                          </div>[m
+[31m-                          <div class="panel panel-default">[m
+[31m-                            <div class="panel-heading" role="tab" id="headingTwo">[m
+[31m-                              <h4 class="panel-title">[m
+[31m-                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">[m
+[31m-                                  Member 2 Details[m
+[31m-                                </a>[m
+[31m-                              </h4>[m
+[31m-                            </div>[m
+[31m-                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">[m
+[31m-                              <div class="panel-body">[m
+[31m-                                                        [m
+[31m-                                                      <div class="panel-body">[m
+[31m-                                                            <form role="form" id="member2">[m
+[31m-                                                          <div class="row">[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <input type="text" name="name2" id="name2" class="form-control input-sm" placeholder="Name">[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">  [m
+[31m-                                                              <div class="selectContainer">[m
+[31m-                                                                  <select id="status2" name="status2" class="form-control input-sm" >[m
+[31m-                                                                      <option> High School(Upto 12th) </option>[m
+[31m-                                                                      <option> UnderGraduate 1st year </option>[m
+[31m-                                                                      <option> UnderGraduate 2nd year </option>[m
+[31m-                                                                      <option> UnderGraduate 3rd year </option>[m
+[31m-                                                                      <option> UnderGraduate 4th year </option>[m
+[31m-                                                                      <option> UnderGraduate 5th year </option>[m
+[31m-                                                                      <option> PostGraduate </option>[m
+[31m-                                                                      <option> Research Scholar </option>[m
+[31m-                                                                      <option> Others </option>[m
+[31m-                                                                  </select>[m
+[31m-                                                              </div>[m
+[31m-                                                          </div>[m
+[31m-                                                            </div>[m
+[31m-                                                          </div>[m
+[31m-[m
+[31m-                                                          <div class="row">[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <input type="text" name="email2" id="email2" class="form-control input-sm" placeholder="Email">[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <input type="text" name="phone2" id="phone2" class="form-control input-sm" placeholder="Mobile Number">[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-                                                          </div>[m
+[31m-[m
+[31m-                                                          <div class="row">[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <input type="text" name="institute2" id="institute2" class="form-control input-sm" placeholder="College/University">[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <div class="selectContainer">[m
+[31m-                                                                  <select id="state2" name="state2"  class="form-control input-sm">[m
+[31m-                                                                      <option value="0">Select State</option>[m
+[31m-                                                                                              <option value="1">[m
+[31m-                                                                        Andaman & Nicobar                      </option>[m
+[31m-                                                                                              <option value="2">[m
+[31m-                                                                        Andhra Pradesh                      </option>[m
+[31m-                                                                                              <option value="3">[m
+[31m-                                                                        Arunachal Pradesh                      </option>[m
+[31m-                                                                                              <option value="4">[m
+[31m-                                                                        Assam                      </option>[m
+[31m-                                                                                              <option value="5">[m
+[31m-                                                                        Bihar                      </option>[m
+[31m-                                                                                              <option value="6">[m
+[31m-                                                                        Chandigarh                      </option>[m
+[31m-                                                                                              <option value="7">[m
+[31m-                                                                        Chattisgarh                      </option>[m
+[31m-                                                                                              <option value="8">[m
+[31m-                                                                        Dadra & Nagar                      </option>[m
+[31m-                                                                                              <option value="9">[m
+[31m-                                                                        Daman & Diu                      </option>[m
+[31m-                                                                                              <option value="10">[m
+[31m-                                                                        Delhi                      </option>[m
+[31m-                                                                                              <option value="11">[m
+[31m-                                                                        Goa                      </option>[m
+[31m-                                                                                              <option value="12">[m
+[31m-                                                                        Gujrat                      </option>[m
+[31m-                                                                                              <option value="13">[m
+[31m-                                                                        Haryana                      </option>[m
+[31m-                                                                                              <option value="14">[m
+[31m-                                                                        Himachal Pradesh                     </option>[m
+[31m-                                                                                              <option value="15">[m
+[31m-                                                                        Jammu & Kashmir                      </option>[m
+[31m-                                                                                              <option value="16">[m
+[31m-                                                                        Jharkhand                      </option>[m
+[31m-                                                                                              <option value="17">[m
+[31m-                                                                        Karnataka                      </option>[m
+[31m-                                                                                              <option value="18">[m
+[31m-                                                                        Kerala                      </option>[m
+[31m-                                                                                              <option value="19">[m
+[31m-                                                                        Lakshdweep                      </option>[m
+[31m-                                                                                              <option value="20">[m
+[31m-                                                                        Madhya Pradesh                      </option>[m
+[31m-                                                                                              <option value="21">[m
+[31m-                                                                        Maharashtra                      </option>[m
+[31m-                                                                                              <option value="22">[m
+[31m-                                                                        Manipur                      </option>[m
+[31m-                                                                                              <option value="23">[m
+[31m-                                                                        Meghalaya                      </option>[m
+[31m-                                                                                              <option value="24">[m
+[31m-                                                                        Mizoram                      </option>[m
+[31m-                                                                                              <option value="25">[m
+[31m-                                                                        Nagaland                      </option>[m
+[31m-                                                                                              <option value="26">[m
+[31m-                                                                        Orissa                      </option>[m
+[31m-                                                                                              <option value="27">[m
+[31m-                                                                        Pondichery                      </option>[m
+[31m-                                                                                              <option value="28">[m
+[31m-                                                                        Punjab                      </option>[m
+[31m-                                                                                              <option value="30">[m
+[31m-                                                                        Rajasthan                      </option>[m
+[31m-                                                                                              <option value="31">[m
+[31m-                                                                        Sikkim                      </option>[m
+[31m-                                                                                              <option value="32">[m
+[31m-                                                                        Tamil Nadu                      </option>[m
+[31m-                                                                                              <option value="33">[m
+[31m-                                                                        Tripura                      </option>[m
+[31m-                                                                                              <option value="34">[m
+[31m-                                                                        Uttar Pradesh                      </option>[m
+[31m-                                                                                              <option value="35">[m
+[31m-                                                                        Uttaranchal                      </option>[m
+[31m-                                                                                              <option value="36">[m
+[31m-                                                                        West Bengal                      </option>[m
+[31m-                                                                                          </select>[m
+[31m-                                                                </div>[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-                                                          </div>                                                           [m
+[31m-                                                        </form>[m
+[31m-                                                    [m
+[31m-                              </div>[m
+[31m-                            </div>[m
+[31m-                          </div>[m
+[31m-                          <div class="panel panel-default">[m
+[31m-                            <div class="panel-heading" role="tab" id="headingThree">[m
+[31m-                              <h4 class="panel-title">[m
+[31m-                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">[m
+[31m-                                  Member 3 Details[m
+[31m-                                </a>[m
+[31m-                              </h4>[m
+[31m-                            </div>[m
+[31m-                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">[m
+[31m-                              <div class="panel-body">[m
+[31m-                                                      <div class="panel-body">[m
+[31m-                                                            <form role="form" id="member3">[m
+[31m-                                                          <div class="row">[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <input type="text" name="name3" id="name3" class="form-control input-sm" placeholder="Name">[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">  [m
+[31m-                                                              <div class="selectContainer">[m
+[31m-                                                                  <select id="status3" name="status3" class="form-control input-sm" >[m
+[31m-                                                                      <option> High School(Upto 12th) </option>[m
+[31m-                                                                      <option> UnderGraduate 1st year </option>[m
+[31m-                                                                      <option> UnderGraduate 2nd year </option>[m
+[31m-                                                                      <option> UnderGraduate 3rd year </option>[m
+[31m-                                                                      <option> UnderGraduate 4th year </option>[m
+[31m-                                                                      <option> UnderGraduate 5th year </option>[m
+[31m-                                                                      <option> PostGraduate </option>[m
+[31m-                                                                      <option> Research Scholar </option>[m
+[31m-                                                                      <option> Others </option>[m
+[31m-                                                                  </select>[m
+[31m-                                                              </div>[m
+[31m-                                                          </div>[m
+[31m-                                                            </div>[m
+[31m-                                                          </div>[m
+[31m-[m
+[31m-                                                          <div class="row">[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <input type="text" name="email3" id="email3" class="form-control input-sm" placeholder="Email">[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <input type="text" name="phone3" id="phone3" class="form-control input-sm" placeholder="Mobile Number">[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-                                                          </div>[m
+[31m-[m
+[31m-                                                          <div class="row">[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <input type="text" name="institute3" id="institute3" class="form-control input-sm" placeholder="College/University">[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <div class="selectContainer">[m
+[31m-                                                                  <select id="state3" name="state3"  class="form-control input-sm">[m
+[31m-                                                                      <option value="0">Select State</option>[m
+[31m-                                                                                              <option value="1">[m
+[31m-                                                                        Andaman & Nicobar                      </option>[m
+[31m-                                                                                              <option value="2">[m
+[31m-                                                                        Andhra Pradesh                      </option>[m
+[31m-                                                                                              <option value="3">[m
+[31m-                                                                        Arunachal Pradesh                      </option>[m
+[31m-                                                                                              <option value="4">[m
+[31m-                                                                        Assam                      </option>[m
+[31m-                                                                                              <option value="5">[m
+[31m-                                                                        Bihar                      </option>[m
+[31m-                                                                                              <option value="6">[m
+[31m-                                                                        Chandigarh                      </option>[m
+[31m-                                                                                              <option value="7">[m
+[31m-                                                                        Chattisgarh                      </option>[m
+[31m-                                                                                              <option value="8">[m
+[31m-                                                                        Dadra & Nagar                      </option>[m
+[31m-                                                                                              <option value="9">[m
+[31m-                                                                        Daman & Diu                      </option>[m
+[31m-                                                                                              <option value="10">[m
+[31m-                                                                        Delhi                      </option>[m
+[31m-                                                                                              <option value="11">[m
+[31m-                                                                        Goa                      </option>[m
+[31m-                                                                                              <option value="12">[m
+[31m-                                                                        Gujrat                      </option>[m
+[31m-                                                                                              <option value="13">[m
+[31m-                                                                        Haryana                      </option>[m
+[31m-                                                                                              <option value="14">[m
+[31m-                                                                        Himachal Pradesh                     </option>[m
+[31m-                                                                                              <option value="15">[m
+[31m-                                                                        Jammu & Kashmir                      </option>[m
+[31m-                                                                                              <option value="16">[m
+[31m-                                                                        Jharkhand                      </option>[m
+[31m-                                                                                              <option value="17">[m
+[31m-                                                                        Karnataka                      </option>[m
+[31m-                                                                                              <option value="18">[m
+[31m-                                                                        Kerala                      </option>[m
+[31m-                                                                                              <option value="19">[m
+[31m-                                                                        Lakshdweep                      </option>[m
+[31m-                                                                                              <option value="20">[m
+[31m-                                                                        Madhya Pradesh                      </option>[m
+[31m-                                                                                              <option value="21">[m
+[31m-                                                                        Maharashtra                      </option>[m
+[31m-                                                                                              <option value="22">[m
+[31m-                                                                        Manipur                      </option>[m
+[31m-                                                                                              <option value="23">[m
+[31m-                                                                        Meghalaya                      </option>[m
+[31m-                                                                                              <option value="24">[m
+[31m-                                                                        Mizoram                      </option>[m
+[31m-                                                                                              <option value="25">[m
+[31m-                                                                        Nagaland                      </option>[m
+[31m-                                                                                              <option value="26">[m
+[31m-                                                                        Orissa                      </option>[m
+[31m-                                                                                              <option value="27">[m
+[31m-                                                                        Pondichery                      </option>[m
+[31m-                                                                                              <option value="28">[m
+[31m-                                                                        Punjab                      </option>[m
+[31m-                                                                                              <option value="30">[m
+[31m-                                                                        Rajasthan                      </option>[m
+[31m-                                                                                              <option value="31">[m
+[31m-                                                                        Sikkim                      </option>[m
+[31m-                                                                                              <option value="32">[m
+[31m-                                                                        Tamil Nadu                      </option>[m
+[31m-                                                                                              <option value="33">[m
+[31m-                                                                        Tripura                      </option>[m
+[31m-                                                                                              <option value="34">[m
+[31m-                                                                        Uttar Pradesh                      </option>[m
+[31m-                                                                                              <option value="35">[m
+[31m-                                                                        Uttaranchal                      </option>[m
+[31m-                                                                                              <option value="36">[m
+[31m-                                                                        West Bengal                      </option>[m
+[31m-                                                                                          </select>[m
+[31m-                                                                </div>[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-                                                          </div>                                                           [m
+[31m-                                                        </form>[m
+[31m-                                                    [m
+[31m-                              </div>[m
+[31m-                            </div>[m
+[31m-                          </div>[m
+[31m-                          <div class="panel panel-default">[m
+[31m-                            <div class="panel-heading" role="tab" id="headingFour">[m
+[31m-                              <h4 class="panel-title">[m
+[31m-                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">[m
+[31m-                                  Member 4 Details[m
+[31m-                                </a>[m
+[31m-                              </h4>[m
+[31m-                            </div>[m
+[31m-                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">[m
+[31m-                              <div class="panel-body">[m
+[31m-                                                      <div class="panel-body">[m
+[31m-                                                            <form role="form" id="member4">[m
+[31m-                                                          <div class="row">[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <input type="text" name="name4" id="name4" class="form-control input-sm" placeholder="Name">[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">  [m
+[31m-                                                              <div class="selectContainer">[m
+[31m-                                                                  <select id="status4" name="status4" class="form-control input-sm" >[m
+[31m-                                                                      <option> High School(Upto 12th) </option>[m
+[31m-                                                                      <option> UnderGraduate 1st year </option>[m
+[31m-                                                                      <option> UnderGraduate 2nd year </option>[m
+[31m-                                                                      <option> UnderGraduate 3rd year </option>[m
+[31m-                                                                      <option> UnderGraduate 4th year </option>[m
+[31m-                                                                      <option> UnderGraduate 5th year </option>[m
+[31m-                                                                      <option> PostGraduate </option>[m
+[31m-                                                                      <option> Research Scholar </option>[m
+[31m-                                                                      <option> Others </option>[m
+[31m-                                                                  </select>[m
+[31m-                                                              </div>[m
+[31m-                                                          </div>[m
+[31m-                                                            </div>[m
+[31m-                                                          </div>[m
+[31m-[m
+[31m-                                                          <div class="row">[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <input type="text" name="email4" id="email4" class="form-control input-sm" placeholder="Email">[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <input type="text" name="phone4" id="phone4" class="form-control input-sm" placeholder="Mobile Number">[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-                                                          </div>[m
+[31m-[m
+[31m-                                                          <div class="row">[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <input type="text" name="institute4" id="institute4" class="form-control input-sm" placeholder="College/University">[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-                                                            <div class="col-xs-6 col-sm-6 col-md-6">[m
+[31m-                                                              <div class="form-group">[m
+[31m-                                                                <div class="selectContainer">[m
+[31m-                                                                  <select id="state4" name="state4"  class="form-control input-sm">[m
+[31m-                                                                      <option value="0">Select State</option>[m
+[31m-                                                                                              <option value="1">[m
+[31m-                                                                        Andaman & Nicobar                      </option>[m
+[31m-                                                                                              <option value="2">[m
+[31m-                                                                        Andhra Pradesh                      </option>[m
+[31m-                                                                                              <option value="3">[m
+[31m-                                                                        Arunachal Pradesh                      </option>[m
+[31m-                                                                                              <option value="4">[m
+[31m-                                                                        Assam                      </option>[m
+[31m-                                                                                              <option value="5">[m
+[31m-                                                                        Bihar                      </option>[m
+[31m-                                                                                              <option value="6">[m
+[31m-                                                                        Chandigarh                      </option>[m
+[31m-                                                                                              <option value="7">[m
+[31m-                                                                        Chattisgarh                      </option>[m
+[31m-                                                                                              <option value="8">[m
+[31m-                                                                        Dadra & Nagar                      </option>[m
+[31m-                                                                                              <option value="9">[m
+[31m-                                                                        Daman & Diu                      </option>[m
+[31m-                                                                                              <option value="10">[m
+[31m-                                                                        Delhi                      </option>[m
+[31m-                                                                                              <option value="11">[m
+[31m-                                                                        Goa                      </option>[m
+[31m-                                                                                              <option value="12">[m
+[31m-                                                                        Gujrat                      </option>[m
+[31m-                                                                                              <option value="13">[m
+[31m-                                                                        Haryana                      </option>[m
+[31m-                                                                                              <option value="14">[m
+[31m-                                                                        Himachal Pradesh                     </option>[m
+[31m-                                                                                              <option value="15">[m
+[31m-                                                                        Jammu & Kashmir                      </option>[m
+[31m-                                                                                              <option value="16">[m
+[31m-                                                                        Jharkhand                      </option>[m
+[31m-                                                                                              <option value="17">[m
+[31m-                                                                        Karnataka                      </option>[m
+[31m-                                                                                              <option value="18">[m
+[31m-                                                                        Kerala                      </option>[m
+[31m-                                                                                              <option value="19">[m
+[31m-                                                                        Lakshdweep                      </option>[m
+[31m-                                                                                              <option value="20">[m
+[31m-                                                                        Madhya Pradesh                      </option>[m
+[31m-                                                                                              <option value="21">[m
+[31m-                                                                        Maharashtra                      </option>[m
+[31m-                                                                                              <option value="22">[m
+[31m-                                                                        Manipur                      </option>[m
+[31m-                                                                                              <option value="23">[m
+[31m-                                                                        Meghalaya                      </option>[m
+[31m-                                                                                              <option value="24">[m
+[31m-                                                                        Mizoram                      </option>[m
+[31m-                                                                                              <option value="25">[m
+[31m-                                                                        Nagaland                      </option>[m
+[31m-                                                                                              <option value="26">[m
+[31m-                                                                        Orissa                      </option>[m
+[31m-                                                                                              <option value="27">[m
+[31m-                                                                        Pondichery                      </option>[m
+[31m-                                                                                              <option value="28">[m
+[31m-                                                                        Punjab                      </option>[m
+[31m-                                                                                              <option value="30">[m
+[31m-                                                                        Rajasthan                      </option>[m
+[31m-                                                                                              <option value="31">[m
+[31m-                                                                        Sikkim                      </option>[m
+[31m-                                                                                              <option value="32">[m
+[31m-                                                                        Tamil Nadu                      </option>[m
+[31m-                                                                                              <option value="33">[m
+[31m-                                                                        Tripura                      </option>[m
+[31m-                                                                                              <option value="34">[m
+[31m-                                                                        Uttar Pradesh                      </option>[m
+[31m-                                                                                              <option value="35">[m
+[31m-                                                                        Uttaranchal                      </option>[m
+[31m-                                                                                              <option value="36">[m
+[31m-                                                                        West Bengal                      </option>[m
+[31m-                                                                                          </select>[m
+[31m-                                                                </div>[m
+[31m-                                                              </div>[m
+[31m-                                                            </div>[m
+[31m-                                                          </div>                                                         [m
+[31m-                                                        [m
+[31m-                                                    [m
+[31m-                              </div>[m
+[31m-[m
+[31m-                            </div>[m
+[31m-                          </div>[m
+[31m-                        </div>[m
+[31m-                        <button type="submit" class="btn btn-success btn-block" data-dismiss="modal" data-toggle="modal" data-target="#register-next" data-dismiss="modal">Submit</button>[m
+[31m-                        </form>[m
+[31m-          </div>[m
+[31m-        </div>[m
+[31m-      </div>[m
+[31m-    </div>[m
+[31m-[m
+[31m-[m
+[31m-    [m
+[31m-	<script>[m
+[31m-  $(function () {[m
+[31m-    $('#myTab a:last').tab('show')[m
+[31m-  })[m
+[31m-</script>[m
+[31m-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->[m
+[31m-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>[m
+[31m-    <!-- Include all compiled plugins (below), or include individual files as needed -->[m
+[31m-    <script src="js/bootstrap.min.js"></script>[m
+[31m-  </body>[m
+[31m-</html>[m
+\ No newline at end of file[m
